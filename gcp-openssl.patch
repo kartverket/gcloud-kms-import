@@ -1,0 +1,10 @@
+--- orig/openssl/apps/enc.c 2020-01-17 14:39:54.991708785 -0500
++++ openssl/apps/enc.c  2020-01-17 14:41:33.215704269 -0500
+@@ -482,6 +482,7 @@
+          */
+
+         BIO_get_cipher_ctx(benc, &ctx);
++   EVP_CIPHER_CTX_set_flags(ctx, EVP_CIPHER_CTX_FLAG_WRAP_ALLOW);
+
+         if (!EVP_CipherInit_ex(ctx, cipher, NULL, NULL, NULL, enc)) {
+             BIO_printf(bio_err, "Error setting cipher %s\n",
