@@ -18,6 +18,7 @@ RUN chmod +x build.sh && ./build.sh
 COPY openssl.sh /root/local/bin
 RUN chmod u+x /root/local/bin/openssl.sh
 RUN ln -s /root/local/bin/openssl.sh /usr/local/bin/openssl.sh
+RUN rm -rf /root/build
 
 WORKDIR /root
 CMD /bin/bash
