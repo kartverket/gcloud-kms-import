@@ -6,6 +6,9 @@ Based on [these instructions](https://cloud.google.com/kms/docs/configuring-open
 Use command `openssl.sh` in order to invoke the patched OpenSSL 1.1.0l.
 
 ## Notes
+
+Current docker image: ``evenh/gcloud-kms-import:437.0.1``
+
 1. Mount your secret material as `/root/secrets_from_host`
 2. Authenticate yourself with `gcloud`.
 3. Set the active project.
