@@ -20,5 +20,9 @@ RUN chmod u+x /root/local/bin/openssl.sh
 RUN ln -s /root/local/bin/openssl.sh /usr/local/bin/openssl.sh
 RUN rm -rf /root/build
 
+RUN apt update && apt install -y bsdmainutils && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 WORKDIR /root
 CMD /bin/bash
