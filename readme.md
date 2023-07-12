@@ -67,6 +67,6 @@ Current docker image: ``evenh/gcloud-kms-import:437.0.1``
       --location europe-north1 \
       --keyring my-keyring \
       --key test \
-      --algorithm rsa-sign-pss-3072-sha256 \
+      --algorithm rsa-sign-pkcs1-3072-sha256 \
       --wrapped-key-file $WRAPPED_KEY
     ```
