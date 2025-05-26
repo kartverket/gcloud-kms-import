@@ -1,0 +1,13 @@
+# nonk8s
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "gcloud-kms-import"
+  tags:
+  - "private"
+  - "internal"
+spec:
+  type: "service"
+  lifecycle: "production"
+  owner: "skip"
+  system: "skip"
