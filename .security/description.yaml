@@ -1,4 +1,0 @@
-organization: IT
-product: gcloud-kms-import
-repo_types: [Tool,Ops]
-platforms: [LOKALT]
